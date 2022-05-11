@@ -11,4 +11,15 @@ entries:
     urls:
     - https://github.com/seanmcguigan/fluxv2-helm-charts/releases/download/foobar-0.1.1/foobar-0.1.1.tgz
     version: 0.1.1
-generated: "2022-05-11T15:57:41.671796054Z"
+  poker:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-05-11T16:00:53.204049863Z"
+    description: A Helm chart for Kubernetes
+    digest: dd154264c9787a0d81bd9740886f0627a9019a60d3f1a8e532d6e0ee6857a42e
+    name: poker
+    type: application
+    urls:
+    - https://github.com/seanmcguigan/fluxv2-helm-charts/releases/download/poker-0.1.0/poker-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-05-11T16:00:53.204055263Z"
