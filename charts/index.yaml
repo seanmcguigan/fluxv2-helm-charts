@@ -1,0 +1,40 @@
+apiVersion: v1
+entries:
+  node:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 16.15.0
+    created: "2022-05-11T11:41:53.141409935+01:00"
+    dependencies:
+    - condition: mongodb.enabled
+      name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.x.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Node.js is a runtime environment built on V8 JavaScript engine. Its
+      event-driven, non-blocking I/O model enables the development of fast, scalable,
+      and data-intensive server applications.
+    digest: a4709da4c4f23db0f7ea62b2fed2572b77bcb1d865433d984e9e509ea0487bcc
+    home: https://github.com/bitnami/charts/tree/master/bitnami/node
+    icon: https://bitnami.com/assets/stacks/nodejs/img/nodejs-stack-220x234.png
+    keywords:
+    - node
+    - javascript
+    - nodejs
+    - git
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: node
+    sources:
+    - https://github.com/bitnami/bitnami-docker-node
+    - http://nodejs.org/
+    urls:
+    - node-18.0.0.tgz
+    version: 18.0.0
+generated: "2022-05-11T11:41:53.131040671+01:00"
