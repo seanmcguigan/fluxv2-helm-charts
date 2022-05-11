@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  foobar:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-05-11T15:57:41.671790954Z"
+    description: A Helm chart for Kubernetes
+    digest: 70f6c98f7275a92a4a5119177407c90c7f85d2cd5247fd92f35b8081598d1811
+    name: foobar
+    type: application
+    urls:
+    - https://github.com/seanmcguigan/fluxv2-helm-charts/releases/download/foobar-0.1.1/foobar-0.1.1.tgz
+    version: 0.1.1
+generated: "2022-05-11T15:57:41.671796054Z"
