@@ -14,6 +14,16 @@ entries:
   poker:
   - apiVersion: v2
     appVersion: 1.0.7
+    created: "2022-05-12T15:18:02.511136392Z"
+    description: A Helm chart for Kubernetes
+    digest: eba339ca2b805e56ec114136fa5468a07b314f396dd863339d7469b130b447f1
+    name: poker
+    type: application
+    urls:
+    - https://github.com/seanmcguigan/fluxv2-helm-charts/releases/download/poker-0.1.3/poker-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: 1.0.7
     created: "2022-05-12T14:50:35.188348987Z"
     description: A Helm chart for Kubernetes
     digest: 1da7e9f47daaa38510500763048dd78bd25a78162a68318b41ba3a12372c0f78
@@ -42,4 +52,4 @@ entries:
     urls:
     - https://github.com/seanmcguigan/fluxv2-helm-charts/releases/download/poker-0.1.0/poker-0.1.0.tgz
     version: 0.1.0
-generated: "2022-05-12T14:50:35.188361287Z"
+generated: "2022-05-12T15:18:02.511199092Z"
