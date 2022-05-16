@@ -2,6 +2,10 @@ name: Lint and Test Charts
 
 on: pull_request
 
+env:
+  CT_TARGET_BRANCH: "main"
+  CT_VALIDATE_MAINTAINERS: false
+
 jobs:
   lint-test:
     runs-on: ubuntu-latest
@@ -14,11 +18,11 @@ jobs:
       - name: Set up Helm
         uses: azure/setup-helm@v1
         with:
-          version: v3.8.2
+          version: v3.8.1
 
       - uses: actions/setup-python@v2
         with:
-          python-version: 3.8
+          python-version: 3.7
 
       - name: Set up chart-testing
         uses: helm/chart-testing-action@v2.2.1
