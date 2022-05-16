@@ -4,6 +4,7 @@ on: pull_request
 
 env:
   CT_TARGET_BRANCH: "main"
+  CT_HELM_EXTRA_ARGS: "--timeout 600"
 
 jobs:
   lint-test:
