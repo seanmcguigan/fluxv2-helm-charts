@@ -7,10 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        run: git pull
-        # uses: actions/checkout@v2
-        # with:
-        #   fetch-depth: 0
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: Set up Helm
         uses: azure/setup-helm@v1
