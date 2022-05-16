@@ -2,6 +2,9 @@ name: Lint and Test Charts
 
 on: pull_request
 
+env:
+  CT_TARGET_BRANCH: "main"
+
 jobs:
   lint-test:
     runs-on: ubuntu-latest
