@@ -13,3 +13,6 @@ spec:
       name: http
   selector:
     {{- include "poker.selectorLabels" . | nindent 4 }}
+{{- with .Values.podLabels }}
+{{ toYaml . | indent 4 }}
+{{- end }}
