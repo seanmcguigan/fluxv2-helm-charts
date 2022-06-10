@@ -12,6 +12,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-{{- with .Values.podLabels }}
-{{ toYaml . | indent 4 }}
-{{- end }}
+    app: poker
