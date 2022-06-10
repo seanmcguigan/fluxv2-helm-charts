@@ -85,4 +85,5 @@ tolerations: []
 
 affinity: {}
 
-foo: "bar"
+podLabels:
+  app: poker
