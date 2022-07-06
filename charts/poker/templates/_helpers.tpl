@@ -48,6 +48,7 @@ Selector labels
 {{- define "poker.selectorLabels" -}}
 app.kubernetes.io/name: {{ include "poker.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
+app: poker
 {{- end }}
 
 {{/*
@@ -59,4 +60,11 @@ Create the name of the service account to use
 {{- else }}
 {{- default "default" .Values.serviceAccount.name }}
 {{- end }}
+{{- end }}
+
+{{/*
+Create custom labels
+*/}}
+{{- define "poker.customLabels" -}}
+foo: bar
 {{- end }}

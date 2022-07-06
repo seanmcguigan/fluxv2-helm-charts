@@ -11,9 +11,6 @@ spec:
   selector:
     matchLabels:
       {{- include "poker.selectorLabels" . | nindent 6 }}
-{{- with .Values.podLabels }}
-{{ toYaml . | indent 6 }}
-{{- end }}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -22,9 +19,9 @@ spec:
       {{- end }}
       labels:
         {{- include "poker.selectorLabels" . | nindent 8 }}
-{{- with .Values.podLabels }}
-{{ toYaml . | indent 8 }}
-{{- end }}
+        {{- range $key, $val := .Values.customPodLabels }}
+        {{ $key }}: {{ $val }}
+        {{- end}}
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
