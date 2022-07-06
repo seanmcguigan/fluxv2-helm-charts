@@ -85,5 +85,6 @@ tolerations: []
 
 affinity: {}
 
+# to version deployments change this value
 customPodLabels:
-  deployment: poker # to version deployments change this value
+  deployment: poker
