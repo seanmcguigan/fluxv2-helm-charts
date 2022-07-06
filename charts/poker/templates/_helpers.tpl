@@ -51,6 +51,13 @@ app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end }}
 
 {{/*
+Custom labels
+*/}}
+{{- define "poker.customLabels" -}}
+app: poker
+{{- end }}
+
+{{/*
 Create the name of the service account to use
 */}}
 {{- define "poker.serviceAccountName" -}}
