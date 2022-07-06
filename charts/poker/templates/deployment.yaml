@@ -19,9 +19,9 @@ spec:
       {{- end }}
       labels:
         {{- include "poker.selectorLabels" . | nindent 8 }}
-        {{- range $key, $val := .Values.customPodLabels }}
-        {{ $key }}: {{ $val }}
-        {{- end}}
+        # {{- range $key, $val := .Values.customPodLabels }}
+        # {{ $key }}: {{ $val }}
+        # {{- end}}
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
